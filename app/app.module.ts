@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
+import { CentralComponent } from './componentes/central/central.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    CentralComponent
   ],
   imports: [
     BrowserModule,
