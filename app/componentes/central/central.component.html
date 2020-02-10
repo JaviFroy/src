@@ -1,1 +1,14 @@
-<p>central works!</p>
+<p>carousel</p>
+
+<ngb-carousel *ngIf="imagenesCarousel">
+  <ng-template ngbSlide *ngFor="let imagen of imagenesCarousel">
+    <div class="picsum-img-wrapper">
+      <img class="d-block w-100" [src]="imagen.ruta" alt="Random first slide">
+    </div>
+    <div class="carousel-caption text-dark">
+      <h3>{{imagen.titulo}}</h3>
+      <p>{{imagen.descripcion}}</p>
+    </div>
+  </ng-template>
+
+</ngb-carousel>
